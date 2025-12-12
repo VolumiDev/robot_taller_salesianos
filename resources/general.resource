@@ -2,8 +2,10 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}        http://localhost:8080
-${BROWSER}     chrome 
+${URL}            http://172.17.0.1:8082
+${BROWSER}        headlesschrome
+# ${URL}        http://localhost:8080
+# ${BROWSER}     chrome 
 
 ${username}                       Super Usuario Pepito            
 ${user_email}                      pepito@elemailparatodo.com            
