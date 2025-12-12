@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}            http://172.17.0.1:8082
+${URL}            http://angular-app-test-temp:80
 ${BROWSER}        headlesschrome
 # ${URL}        http://localhost:8080
 # ${BROWSER}     chrome 
