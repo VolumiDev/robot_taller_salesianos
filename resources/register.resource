@@ -12,7 +12,10 @@ ${button_registrarme}             xpath://button[contains(normalize-space(.),Res
 
 *** Keywords ***
 Hacer Registro
-    Input Text                    ${reg_input_nombre_completo}      ${username}
-    Input Text                    ${reg-input_email}                ${user_email}
-    Input Password                ${reg-input_password}             ${user_password}
-    Click Seguro Con Scroll       ${button_registrarme}
+    Wait Until Element Is Visible     ${reg_input_nombre_completo}      10
+    Input Text                        ${reg_input_nombre_completo}      ${username}
+    Wait Until Element Is Visible     ${reg_input_nombre_completo}      10
+    Input Text                        ${reg-input_email}                ${user_email}
+    Wait Until Element Is Visible     ${reg_input_nombre_completo}      10
+    Input Password                    ${reg-input_password}             ${user_password}
+    Click Seguro Con Scroll           ${button_registrarme}
