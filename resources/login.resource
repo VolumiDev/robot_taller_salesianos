@@ -15,6 +15,11 @@ Abrimos Navegador Y Vamos Al Link De Registro
     Click Seguro Con Scroll    ${link_registro}
 
 Hacer Login
-    Input Text                    ${login_input_email}       ${user_email}    
-    Input Password                ${login_input_password}    ${user_password}    
-    Click Seguro Con Scroll       ${login_button}  
+
+    Wait Until Element Is Visible     ${login_input_email}       10
+    Input Text                        ${login_input_email}       ${user_email}    
+    
+    Wait Until Element Is Visible     {login_input_password}     10
+    Input Password                    ${login_input_password}    ${user_password}    
+    
+    Click Seguro Con Scroll           ${login_button}  
