@@ -4,10 +4,10 @@ Resource    general.resource
 
 
 *** Variables ***
-${reg_input_nombre_completo}      css=#name
-${reg-input_email}                css=#reg-email
-${reg-input_password}             css=#reg-password
-${button_registrarme}         xpath://button[contains(normalize-space(.),Resgistrarme)]
+${reg_input_nombre_completo}      xpath://input[id=name]
+${reg-input_email}                xpath://input[id=reg-email]
+${reg-input_password}             xpath://input[id=reg-password]
+${button_registrarme}             xpath://button[contains(normalize-space(.),Resgistrarme)]
         
 
 *** Keywords ***
